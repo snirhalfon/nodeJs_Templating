@@ -1,0 +1,15 @@
+<h1>המוצרים שלנו!</h1>
+<div class="container">
+  <div class="row">
+    {{#each product}}
+      <div class="col-md-4">
+        <img src="/pics/{{this.picname}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{this.pname}}</h5>
+          <p class="card-text">מחיר {{this.price}} ש"ח</p>
+          <a href="#" class="btn btn-primary">פרטים נוספים</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
